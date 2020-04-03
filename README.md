@@ -1,5 +1,11 @@
 # podsync Docker for armhf (raspberry pi)
 
+### Pre-built Docker Image
+
+https://hub.docker.com/r/johnnybui/podsync-armhf
+
+`docker pull johnnybui/podsync-armhf`
+
 ### Build Image (skip if you don't want to modify the image)
 
 `docker build -t <your-tag> .`
