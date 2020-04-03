@@ -6,10 +6,10 @@ services:
     image: johnnybui/podsync-armhf
     restart: unless-stopped
     ports:
-      - 127.0.0.1:8088:8080	# remove 127.0.0.1: to expose podsync to public
+      - 127.0.0.1:8088:8080 # remove 127.0.0.1: to expose podsync to public
     volumes:
-      - ~/storage/podsync/data:/app/data/		# before : is the path to your data folder
-      - ~/storage/podsync/config.toml:/app/config.toml	# before : is the path to your config.toml file
+      - ~/storage/podsync/data:/app/data/ # before : is the path to your data folder
+      - ~/storage/podsync/config.toml:/app/config.toml # before : is the path to your config.toml file
     environment:
-      - PUID=1000	# change to your user id
-      - PGID=1000	# change to your group id
+      - PUID=1000 # change to your user id
+      - PGID=1000 # change to your group id
